@@ -1,0 +1,129 @@
+<challenge>
+  <name>Mirko</name>
+  <problem><![CDATA[Mirko radi kao profesionalni dostavljač sira u nekoj imaginarnoj državi koja se sastoji od $N \leq 100\;000$ gradova i $M \leq 200\;000$ dvosmjernih cesta između njih. Mirko će svaki od svojih $Q \leq 100\;000$ radnih dana krenuti iz grada $1$ u neki grad $G_j$, takav da je $G_j$ grad koji će morati posjetiti $j$-tog radnog dana. Pomozite Mirku i odredite koliko će kilometara on najmanje prijeći svakog od zadanih dana na putu od grada $1$ do grada $G_j$ ako želi uspješno odraditi zadatak.
+
+## Ulazni podaci
+
+
+Zadani su $N$ i $M$, zatim $M$ redova oblika $X_i$, $Y_i$, $Z_i$ takvi da su $X_i$ i $Y_i$ $(1 \leq X_i, Y_i \leq 100\;000)$ gradovi koje spaja $i$-ta cesta, a $Z_i$ $(1 \leq Z_i \leq 1\;000\;000\;000)$ je udaljenost u kilometrima koju Mirko mora prijeći ako želi iz $X_i$ doći u $Y_i$ ili iz $Y_i$ u $X_i$. 
+Zatim se unosi $Q$ te $Q$ redova oblika $G_j$ $(1 \leq G_j \leq 100\;000)$ takvih da je $G_j$ označava grad koji Mirko mora posjetiti $j$-tog radnog dana. 
+
+
+## Izlazni podaci
+
+Konačno vaš program treba ispisati $Q$ redova takih da $j$-ti red odgovara minimalnoj udaljenosti od grada $1$ do grada $G_j$.
+]]></problem>
+  <tags>grafovi</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

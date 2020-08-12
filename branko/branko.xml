@@ -1,0 +1,128 @@
+<challenge>
+  <name>Branko</name>
+  <problem><![CDATA[!!!hint ""
+    Potrebno je koristiti brzo potenciranje matrica i linearne rekurzije. Više detalja u udžbeniku.
+
+Branko je još uvijek jako mali, pa voli skakati po stepenicama.
+
+Danas je u posjeti Španjolskim stubama u Rimu, te jednostavno ne može odoljeti popeti se do gore.
+
+Španjolske stube se sastoje od $\textbf{N}$ stepenica, a Branko, budući da voli $\textbf{potencije broja 2}$, 
+skače po $\textbf{1}$, $\textbf{2}$, $\textbf{4}$ ili $\textbf{8}$ stepenica odjednom!
+
+Njegova mama (kako bi dobila malo mira) mu je obećala veliku Dorina čokoladu s keksima, 
+ako joj Branko može reći na koliko načina $\textbf{B}$ se može popeti na vrh Španjolskih stuba.
+
+Pomozite Branku sa njegovim stepenastim pitanjem!
+
+## Ulazni podatci
+
+U prvom i jedinom retku nalazi se prirodni broj $N$ ($1 \leq N \leq 10^{18}$), visina Španjolskih stuba.
+
+## Izlazni podatci
+
+U jedini redak potrebno je ispisati prirodni broj $B$ iz teksta zadatka.
+
+Budući da taj broj može biti jako velik, potrebno ga je ispisati modulo $\textbf{1 000 000 007}$.]]></problem>
+  <tags>dinamičko programiranje, matematika</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Visine stepenica na koje Branko može stati:
+
+(1, 2, 3, 4, 5)
+
+(1, 2, 3, 5)
+
+(1, 2, 4, 5)
+
+(1, 3, 4, 5)
+
+(1, 3, 5)
+
+(1, 5)
+
+(2, 3, 4, 5)
+
+(2, 3, 5)
+
+(2, 4, 5)
+
+(4, 5)]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

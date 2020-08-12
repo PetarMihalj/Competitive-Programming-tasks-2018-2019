@@ -1,0 +1,142 @@
+<challenge>
+  <name>Neville</name>
+  <problem><![CDATA[U magičnoj školi Hogwarts konačno je stiglo i to vrijeme. Došlo je vrijeme za 
+OČI (Opake Čarobnjačke Ispite).
+
+Glavni junak našeg zadatka, Neville Longbottom, je kao što svi znamo, 
+užasan u Čarobnim napitcima te se stoga intenzivno pripremao za taj predmet.
+Danas je nažalost konačno došao i taj dan, počeo je ispit iz Napitaka.
+
+Pred Nevilleom na stolu bilo je raspoređeno:
+
+* $C$ štapića cimeta,
+
+* $M$ korijena maslačka,
+
+* $S$ repova štakora,
+
+* $Z$ očnjaka zmija,
+
+* $G$ gusjenica,
+
+a zadatak je bio napraviti Višesokovni napitak.
+
+Međutim, Neville nije znao napraviti taj Napitak, 
+pa je samo usuo sav cimet koji je imao u kotao.
+
+Njegov profesor, Severus Snape, ga je naravno morao srušiti, iako je napitak imao izvrstan okus.
+
+Međutim, Snapea sada zanima koliko je Neville ukupno iskoristio sastojaka, kako bi znao dostaviti račun za sastojke ravnatelju, Albusu Dumbledoreu.
+
+Pomozite Snapeu i recite mu taj broj! 
+
+## Ulazni podatci
+
+U 5 redaka nalaze se 5 prirodnih brojeva $C$, $M$, $S$, $Z$ i $G$ ($1 \leq C, M, S, Z, G \leq 10^6$) iz teksta zadatka.
+
+## Izlazni podatci
+
+Ispišite ukupan broj potrošenih sastojaka.]]></problem>
+  <tags>ad hoc</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef DEBUG
+#define DEBUG(...) printf(__VA_ARGS__)
+#endif
+
+int main() {
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[#include <bits/stdc++.h>
+
+using namespace std;
+
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  return 0;
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[import java.util.Scanner;
+
+public class program {
+	public static void main(String[] args) {
+	}
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Neville je usuo sva 4 štapića cimeta u Napitak. Zato je potrošio ukupno 4 sastojaka.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

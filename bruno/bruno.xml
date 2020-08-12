@@ -1,0 +1,138 @@
+<challenge>
+  <name>Bruno</name>
+  <problem><![CDATA[Bruno je vladar Brunozemske, a Brunozemska je država koja se sastoji od $N$ $(N \leq 100\;000)$ gradova i $M$ $(M \leq 200\;000)$ dvosmjernih cesta koje povezuju međusobno gradove.
+
+Bruno je zbog svoje rastrošnosti prestao ulagati sredstva u obnovu cesta i sada ih troši na svoje zabave. Ceste su s vremenom počele propadati i to tako da svakog dana propadne točno jedna. Ministra prometa Brunozemske, Tomislava, zanima od koliko se skupina međusobno nepovezanih gradova svakog dana sastoji Brunozemska. Bitno je napomenuti kako Brunozemska nekada bila potpuno povezana, a sada će se raspadati dok sve ceste ne propadnu.
+
+Hint: Union-Find
+
+## Ulazni podaci
+
+Unosi se $N$ i $M$ u prvom redu, zatim u sljedećih $M$ redova se unose $A_i$ i $B_i$ $(1 \leq A_i, B_i \leq N)$ takvih da $i$-ta cesta povezuje grad $A_i$ i $B_i$. Nakon toga se u sljedećih $M$ redova upisuju brojevi $C_j$ $(1 \leq C_j \leq M)$ takvi da broj $C_j$ označava da će $j$-tog dana propasti cesta indeksa $C_j$.
+
+
+## Izlazni podaci
+
+U $i$-tom od $M$ redaka potrebno je ispisati od koliko skupina međusobno nepovezanih gradova se sastoji Brunozemska nakon $i$-tog dana.]]></problem>
+  <tags>union-find</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.sample.txt</input>
+      <output format="file">out12.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

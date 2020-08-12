@@ -1,0 +1,229 @@
+<challenge>
+  <name>Ivica</name>
+  <problem><![CDATA[S navalom kriptovaluta Ivica vas je zamolio za pomoć. Ivica je primjetio kako na raznim kripto-mjenjačnicama su različite cijene za valute i želi znati postoji li način na koji se može zaraditi na njima. 
+
+Trenutno Ivica traži mogućnost napraviti potpuni ciklus, odnosno prebaci sredstva iz jedne kriptovalute u drugu, pa u treću i tako redom dok se ne vrati opet na prvu s više sredstava nego na početku. Ukoliko je to moguće treba ispisati `DA` kao izlaz, a u suprotnom `NE`.
+
+
+
+!!!hint ""
+    Mogu li se težine nekako transformirati tako da se traže negativni ciklusi u grafu? 
+
+## Ulazni podaci
+
+U prvom retku nalaze se $|V|$ i $|E|$ $(|V| \cdot |E| < 1\;000\;000)$, broj kriptovaluta i broj konverzija između njih. Zatim se u sljedećih $|E|$ redaka nalazi brojevi $u$, $v$, i $\text{tecaj}$, što znači da se iz jednog $u$ može dobiti $\text{tecaj}$ $v$-ova.  
+
+
+## Izlazni podaci
+
+U prvom i jedinom retku potrebno je ispisati `DA` ako je moguća zarada u ciklusu prebacivanja sredstava iz jedne kripto-valute u drugu, odnosno `NE` ako nije.
+]]></problem>
+  <tags>graph</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in13.txt</input>
+      <output format="file">out13.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in14.txt</input>
+      <output format="file">out14.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in15.txt</input>
+      <output format="file">out15.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in16.txt</input>
+      <output format="file">out16.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in17.txt</input>
+      <output format="file">out17.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in18.txt</input>
+      <output format="file">out18.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in19.txt</input>
+      <output format="file">out19.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in20.txt</input>
+      <output format="file">out20.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Postoji ciklus $0 \rightarrow 2 \rightarrow 1 \rightarrow 0$ koji kad se pomnoži  iznosi $1.9683478715517146$ te ga možemo uzastopno rabiti da beskonačno generiramo novac.
+
+![slike](ivica1.png)
+]]></hint>
+      <input format="file">in21.sample.txt</input>
+      <output format="file">out21.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Ovdje ne postoji mogućnost laganog profitiranja.
+
+![](ivica2.png)
+
+]]></hint>
+      <input format="file">in22.sample.txt</input>
+      <output format="file">out22.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

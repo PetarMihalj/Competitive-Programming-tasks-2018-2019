@@ -1,0 +1,128 @@
+<challenge>
+  <name>Olovke</name>
+  <problem><![CDATA[Učitelj Jerko je na sat informatike donio $M$ prekrasnih olovaka za svojih $N$ prekrasnih učenika. Svaka je olovka na sebi imala jedinstven i lijep uzorak. Učenici su pohitali prema olovkama u nadi da će ih ugrabiti, ali Jerko ih je spremno zaustavio i rekao: "Ne možemo se ponašati kao barbari! Svaki od vas neka napiše na papir koje mu se olovke sviđaju, a ja ću odrediti tko će dobiti koju olovku!". Pomozite Jerku odrediti koliko najviše učenika može dobiti olovku koja im se sviđa. Svaka olovka može pripasti najviše jednom učeniku.
+
+## Ulazni podaci
+
+U prvom retku nalaze se brojevi $N$ i $M$ $(1 \leq N, M \leq 100)$.
+
+U sljedećih $N$ redaka nalazi se po $M$ znakova iz skupa {`S`, `N`}. Znak u $i$-tom retku i $j$-tom stupcu je `S` ako se $i$-tom učeniku sviđa $j$-ta olovka, a `N` ako mu se ne sviđa.
+
+
+## Izlazni podaci
+
+U prvi i jedini redak ispišite najveći mogući broj zadovoljnih učenika.]]></problem>
+  <tags>matching</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

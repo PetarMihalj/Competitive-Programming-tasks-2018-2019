@@ -1,0 +1,132 @@
+<challenge>
+  <name>Vocnjak</name>
+  <problem><![CDATA[Mirko ima voćnjak koji se sastoji od $N$ blokova numeriranih od 1 do $N$.
+Mirko želi špricati svoj voćnjak, što će učiniti koristeći avion iz kojeg baca bombe pesticida. Ukupno je bacio $B$ bombi. $i$-tu bombu je bacio na poziciju $x_i$ te ona ima domet $r_i$, što znači da će pošpricati $r_i$ blokova desno i $r_i$ blokova lijevo od $x_i$, ali NE i blok $x_i$. Svaki blok smije se pošpricati najviše $K$ puta. Ako se neki blok pošprica više od $K$ puta, onda je taj blok uništen jer je na njemu previše pesticida.
+
+Ispišite koliko blokova je pošpricano, koliko je uništeno i koliko ih je nešpricano.
+
+### Ulazni podaci
+U prvom retku nalazi se broj $N$ ($1 \leq N \leq 10$^$18$).          
+U drugom retku nalazi se broj $B$ ($1 \leq B \leq 10$^$5$).             
+U trecem retku nalazi se broj $K$ ($1 \leq K \leq 10$^$5$).               
+U sljedećih B redaka nalaze se po 2 broja, $x_i$ i $r_i$ ($1 \leq xi \leq N, 1 \leq ri \leq 10$^$18$).
+
+### Izlazni podaci
+U prvom retku ispišite broj pošpricanih blokova.             
+U drugom retku ispišite broj uništenih blokova.                 
+U trecem retku ispišite broj nešpricanih blokova.                     
+]]></problem>
+  <tags>sweep</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

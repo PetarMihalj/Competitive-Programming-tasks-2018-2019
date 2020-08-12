@@ -1,0 +1,173 @@
+<challenge>
+  <name>Menza - lakše</name>
+  <problem><![CDATA[(Malo veći) Perica često posjećuje studentsku menzu.
+
+U menzi postoji jedan jedini red jela,
+a jela su na pozicijama označenim rednim brojevima $1$ do $N$.
+Svako jelo ima svoju cijenu $c_i$.
+
+Majka je Perici dala pozamašnu sumu novca, $M$ kuna.
+Od silnog bogatstva sinula mu je ekstravagantna ideja za sljedeći posjet menzi.
+
+Perica će ući u menzu i zaustaviti se kod određenog jela, s nekim rednim brojem $i$.
+Uzet će jelo s brojem $i$, prvo desno jelo (s brojem $i+1$), drugo desno, itd.,
+sve dok god bude imao novca da plati sva ta silna jela.
+Ako Perica dođe do kraja reda i nema više desnih jela, završava kupovinu.
+(Moguće je da će Perica kupiti samo jedno jelo.)
+
+Pericu zanima može li potrošiti sav novac, 
+kod kojeg jela se mora zaustaviti,
+i koliko jela će kupiti.
+
+### Ulazni podatci
+
+U prvom retku nalazi se prirodni broj $N$ ($1 \leq N \leq 10^3$), 
+broj jela u menzi.
+
+U drugom retku nalazi se $N$ cijelih brojeva $c_i$ ($0 \leq c_i \leq 1 000$), 
+cijene svakog jela.
+
+U trećem retku nalazi se prirodni broj $M$ ($1 \leq M \leq 10^9$), novac koji 
+je mama ostavila Perici.
+
+### Izlazni podatci
+
+U prvom retku potrebno je ispisati DA ili NE, ovisno o tome može li Perica 
+potrošiti sav novac.
+
+Ako Perica može potrošiti sav novac, u sljedeća 2 retka potrebno je ispisati 
+prirodne brojeve $X$ i $Y$, broj jela kod kojeg se treba zaustaviti i broj jela 
+koji će kupiti, respektivno.
+
+Napomena: Ako postoji više rješenja, ispišite ono s najmanjim brojem $X$.]]></problem>
+  <tags>greedy</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Ako se perica zaustavi kod jela s rednim brojem $2$, 
+kupit će jela s cijenama $3$, $2$ i $4$ i time potrošiti sav novac.
+
+Perica će potrošiti sav novac i ako se zaustavi kod jela s rednim brojem $4$,
+ali rješenje s najmanjim $X$ je ono s $X=2$.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Perica nikako ne može potrošiti točno $7$ kuna.
+
+Kad bi se zaustavio na jelu s rednim brojem $1$, potrošio bi $2+4=6$ kuna.
+
+Za zaustavljanje na jelu s rednim brojem $2$ bi potrošio $4$ kune, a na jelu s rednim brojem $3$ $6$ kuna.
+]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>8388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

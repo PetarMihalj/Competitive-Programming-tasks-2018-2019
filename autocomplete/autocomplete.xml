@@ -1,0 +1,137 @@
+<challenge>
+  <name>Autocomplete</name>
+  <problem><![CDATA[Današnji pametni mobiteli prilikom pisanja teksta mogu ponuditi riječi koje počinju određenim nizom znakova (tzv. autocomplete). Primjerice, ako se rječnik mobitela sastoji od riječi "abc", "abdc", "adgg" i "ab", a korisnik u neko tekstualno polje napiše riječ "ab", njegov pametni mobitel može mu ponuditi neku od riječi "abc", "abdc" ili "ab".
+
+Pretpostavimo da je rječnik mobitela prazan. Inženjer koji testira funkcionalnost automatskog dovršavanja riječi redom unosi N riječi u sustav.  Za svaku riječ koju unese, mobitel mu ponudi sve riječi iz trenutnog rječnika koje mogu dovršiti trenutnu riječ, te zatim u rječnik doda trenutnu riječ.
+
+Vaš je zadatak da za svaku od N riječi koje inženjer redom upisuje u mobitel ispišete koliko će se riječi iz rječnika ponuditi.
+
+Napomene:
+
+* Sve riječi će biti različite.
+* Ukupan broj znakova u svim riječima će biti manji ili jedan 2 milijuna.
+
+### Ulazni podaci
+
+U prvom retku nalazi se prirodan broj $N$, ($1 \leq N \leq 200000$), broj riječi koje inženjer upisuje.
+
+U sljedećih $N$ redaka se nalaze riječi koje se sastoje od malih slova engleske abecede.
+
+### Izlazni podaci
+
+U $N$ redaka ispišite redom odgovore na svaki od upita.
+]]></problem>
+  <tags>stringovi</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

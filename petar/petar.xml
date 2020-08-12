@@ -1,0 +1,143 @@
+<challenge>
+  <name>Petar</name>
+  <problem><![CDATA[Petar se nalazi u šumi koja je predstavljena kao kvadratna matrica veličine $N$*$N$, $N \leq 1000$. Nazovimo tu matricu $A$. 
+
+Svako polje matrice $A$ je slobodno (označeno s '.', ASCII 46) ili se na njemu nalazi jedna od prepreka: stablo (označeno s 'x', ASCII 120) ili kamen (označeno s '#', ASCII 35). Petar pri ruci ima i sjekiru koju ne voli koristiti. Sjekira mu omogućava da prolazi i kroz polja na kojima se nalaze stabla, ali nikako ne može ići preko polja na kojima se nalazi kamenje.
+
+Petar pokušava pronaći put od svoje trenutne pozicije u matrici u retku $R$ i stupcu $S$, do polja matrice koje se nalazi u retku $B$ i stupcu $C$. 
+
+------------------------
+
+Pomozite Petru i recite mu može li doći do svog cilja bez upotrebe sjekire. 
+
+Ako može doći do cilja bez upotrebe sjekire ispišite "Lagano" bez navodnika. Ako ne može doći do cilja bez upotrebe sjekire odredite može li općenito doći do cilja s upotrebom sjekire. Ako može, potrebno je ispisati "Moguce" bez navodnika, a u suprotnom "Nije moguce" ako niti sa sjekirom ne može doći do cilja, također bez navodnika. U slučaju kada je odgovor "Lagano" ili "Moguce" potrebno je dodatno ispisati i minimalan broj koraka za doći od početka do cilja.
+
+Potrebno je napomenuti kako se Petar može kretati samo u 4 osnovna smjera (gore, dolje, lijevo i desno) te da, ako je odgovor "Moguce", nije bitno koliko se puta koristila sjekira, odnosno potrebno je samo ispisati najkraći put na kojem se sjekira upotrebljava proizvoljan broj puta.
+
+##Ulazni podaci
+U prvom retku nalazi se broj $N$, takav da $1 \leq N \leq 1000$.
+
+U drugom retku nalaze se brojevi $R$ i $S$, takvi da $1 \leq R, S \leq 1000$.
+
+U trećem retku nalaze se brojevi $B$ i $C$, takvi da $1 \leq B, C \leq 1000$.
+
+Zatim se u N redova po N znakova unosi matrica $A$, a svaki $A_{ij}$ je oblika '.', 'x' ili '#'.
+
+##Izlazni podaci
+U prvi redak potrebno je ispisati jednu od sljedeći poruka: "Lagano", "Moguce" ili "Nije moguce".
+
+Ako je odgovor "Lagano" ili "Moguce" potrebno je ispisati i duljinu najkraćeg puta u drugi redak.]]></problem>
+  <tags>bfs</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

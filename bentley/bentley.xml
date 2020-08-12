@@ -1,0 +1,125 @@
+<challenge>
+  <name>Bentley</name>
+  <problem><![CDATA[Bentley vodi tvrtku s velikim brojem zaposlenika o čijoj plaći treba voditi zapise. Konkretno, on ima $ N $ zaposlenika (koji su označeni brojevima od $ 1 $ do $ N $), te $ Q $ upita na koja treba odgovor. Bentley ima dvije vrste upita:
+
+ 1. Zanima ga koliki je zbroj plaća zaposlenika s oznakama u intervalu $ [p, k] $
+ 2. Želi dati povišicu od $ d $ kuna zaposlenicima s oznakama u intervalu $ [p, k] $
+
+
+## Ulazni podatci
+
+U prvoj liniji nalaze se dva broja $ N $ i $ Q $ iz zadatka ($ 1 \leq N, Q \leq 10^3 $).
+
+U drugoj liniji nalazi se $ N $ brojeva gdje $ i $-ti broj predstavlja početnu plaću $ i $-tog zaposlenika. 
+
+U sljedećih $ Q $ redaka nalaze se Bentleyjevi upiti, odnosno `sum p k` za prvu vrstu upita ili `raise p k d` za drugu vrstu upita ($ 1 \leq p, k \leq N, 1 \leq d \leq 10^3 $).
+
+## Izlazni podatci
+
+Za svaki upit prvog tipa potrebno je ispisati rezultantu sumu po jednu u retku, dok za upite drugog tipa nije potrebno ništa ispisati.]]></problem>
+  <tags>adhoc</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512388608</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

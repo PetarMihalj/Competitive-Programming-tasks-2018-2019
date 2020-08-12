@@ -1,0 +1,109 @@
+<challenge>
+  <name>Pero</name>
+  <problem><![CDATA[!!!hint ""
+    Dodavanjem istog broja na obe strane kongruencijske jednadžbe ne mijenja se skup njenih rješenja.
+    S čim pomnožiti kongruencijsku jednadžbu da bismo se riješili broja A s lijeve strane?
+    https://en.wikipedia.org/w/index.php?title=Modular_multiplicative_inverse#Using_Euler's_theorem
+    Potrebno je primjeniti brzo potenciranje!
+    
+    
+
+Pero je danas u školi učio kongruencije.
+
+Učiteljica je na ploču napisala dva prirodna broja $\textbf{A}$ i $\textbf{B}$, te prosti broj $\textbf{P}$.
+
+Nakon toga je zadala zadatak:
+
+"Tko može naći najmanji prirodni broj $\textbf{X}$ takav da vrijedi $(A * X - B) mod P = 0$ dobit će jednu veliku Dorinu s rižom."
+
+Budući da Pero jako voli Dorinu s rižom, pomozite mu riješiti ovaj teški zadatak!
+
+## Ulazni podatci
+
+U prvom i jedinom retku nalaze se prirodni brojevi $A$, $B$, i $P$ ($0 \leq A, B < P < 10^{9}$) iz teksta zadatka.
+
+## Izlazni podatci
+
+U jedini redak potrebno je ispisati prirodni broj $X$ iz teksta zadatka. ]]></problem>
+  <tags>matematika</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Objašnjeno na predavanju.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Objašnjeno na predavanju.]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

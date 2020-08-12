@@ -1,0 +1,98 @@
+<challenge>
+  <name>Rotirka</name>
+  <problem><![CDATA[Slavko je od Mirka dobio riječ napisanu u krug u smjeru kazaljke na satu kao što je prikazano na slici.
+
+![abcde](krug.png)
+
+Slavko je potom sastavio listu od $N$ riječi, $x$-tu riječ po redu dobivši na način da redom uzima $K$ znakova počevši od $x$-tog znaka originalne riječi.
+
+Primjerice, za riječ $abcde$ i $K = 3$, Slavko bi redom dobio riječi $abc$, $bcd$, $cde$, $dea$ i $eab$. 
+
+Vaš zadatak je da odredite leksikografski poredak Slavkovih riječi, tj. da ih sortirate. Radi jednostavnosti, Slavkove riječi predstavljene su prirodnim brojem između $1$ i $N$ koji predstavlja redni broj te riječi. Ako su neke dvije riječi jednake, leksikografsku manju riječ smatramo onom koja se prije pojavila u Slavkovom popisu.
+
+## Ulazni podaci
+
+U prvom retku nalazi se niz malih slova engleske abecede duljine $N (1 \le N \le 100\,000)$.   
+U drugom retku nalazi se prirodni broj $K (1 \le K \le N)$.
+
+## Izlazni podaci
+
+Ispišite $N$ redaka. U $i$-tom retku potrebno je ispisati redni broj $i$-te po redu riječi iz popisa nakon sortiranja.
+
+
+
+]]></problem>
+  <tags>hash, stringovi</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.sample.txt</input>
+      <output format="file">out6.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

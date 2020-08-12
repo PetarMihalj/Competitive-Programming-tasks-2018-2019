@@ -1,0 +1,132 @@
+<challenge>
+  <name>Hong Kong</name>
+  <problem><![CDATA[Učitelj Jerko je svoje učenike za nagradu što su riješili njegov zadatak sa vlakovima, odlučio odvesti na krasno putovanje u Hong Kong. No, što ih je tamo čekalo? JOŠ VLAKOVA! Bila je to promišljena klopka našeg Jerka, koji je iskoristio njihovo putovanje kao priliku za podučavanje. Rekao je učenicima: "Odabrao sam $N$ naselja u Hong Kongu i označio ih brojevima od $1$ do $N$. Naselja su povezana sa $M$ linija vlakova. Svaka linija jednosmjerno vozi iz naselja $X$ u naselje $Y$. Napravit ćemo poseban obilazak! Krenut ćemo iz nekog naselja $P$, obići proizvoljan broj drugih naselja (barem jedno, naravno) te se na kraju vratiti natrag u naselje $P$. Samo, moram napomenuti, ne želim da ijedno naselje posjetimo više od jednom (osim, dakako, našeg početnog naselja). Recite mi, dragi moji učenici, iz kojih naselja je moguće započeti i završiti ovakav obilazak?". Učenici su u čudu promatrali ovog genijalnog čovjeka, sretni što imaju priliku riješiti njegov problemčić. 
+
+Dugo su njime razbijali glavu, no onda im je Jerko prišapnuo kako bi im sljedeći link mogao biti od pomoći: [Strongly Connected Component](https://en.wikipedia.org/wiki/Strongly_connected_component).
+
+
+## Ulazni podaci
+
+U prvom retku nalaze se brojevi $N$ $(1 \leq N \leq 100\;000)$ i $M$ $(1 \leq M \leq 200\;000)$.
+
+U sljedećih $M$ redaka nalaze se po dva broja $X$ i $Y$ $(1 \leq X, Y \leq N, X != Y)$.
+
+
+## Izlazni podaci
+
+U prvi i jedini redak ispišite niz nula i jedinica, gdje se na $i$-tom mjestu nalazi jedan, ako je iz $i$-tog grada moguće započeti i završiti poseban obilazak, a nula u suprotnom.
+]]></problem>
+  <tags>SCC</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>4000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

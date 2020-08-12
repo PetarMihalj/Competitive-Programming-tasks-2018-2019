@@ -1,0 +1,99 @@
+<challenge>
+  <name>KFC</name>
+  <problem><![CDATA[Marko se preko ljeta, u sklopu ljetne studentske prakse, zaposlio na Krapinskom Festivalu piCoka.
+
+Šef mu je dao zadatak. Na raspolaganju ima $M$ pljeskavica od mesa i $S$ pljeskavica od soje.
+Na raspolaganju ima i ukupno $H$ peciva.
+
+Za jedan hamburger potrebno je jedno pecivo i točno jedna pljeskavica (bilo koje vrste).
+Mesni hamburgeri prodaju se za $P_M$ kuna, a sojini $P_S$ kuna.
+
+Odrediti koliko najviše kuna Marko može zaraditi (naravno, prodat će se svi hamburgeri koje Marko napravi).
+
+## Ulazni podaci
+
+
+U prvom retku nalazi se brojevi $M$, $S$, $H$.
+U drugom retku nalaze se brojevi $P_M$ i $P_S$.
+Svi brojevi su unutar intervala $[0,1000]$.
+
+
+## Izlazni podaci
+
+Ispišite koliko novca Marko najviše može zaraditi.
+
+]]></problem>
+  <tags>adhoc</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

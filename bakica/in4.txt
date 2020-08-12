@@ -1,0 +1,9 @@
+3 7
+4 7
+abbdbbd
+efghada
+ijklada
+abbdbbd
+efghada
+ijklada
+ijklada

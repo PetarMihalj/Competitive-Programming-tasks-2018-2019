@@ -1,0 +1,110 @@
+<challenge>
+  <name>Nimbo</name>
+  <problem><![CDATA[!!!hint ""
+    Razmislite kojoj poznatoj igri (u teoriji igara i udžbenku) je ova igra slična.
+
+Branko i Pero igraju novu zanimljivu igru, Nimbo!
+
+Igra Nimbo se sastoji od $\textbf{N}$ žetona i jedne beskonačno dugačke trake papira.
+Traka je podijeljena na kvadratiće, s tim da je prvi kvadratić označen brojem 0.
+
+Na početku se žetoni raspodijele na traku tako da se svaki žeton smjesti na proizvoljno odabrani kvadratić.
+
+U svakom potezu igrač može uzeti žeton i premjestiti ga "lijevo" (na kvadratić s manjim brojem).
+Izgubio je onaj igrač koji više ne može napraviti potez, tj. pobjedio je onaj igrač koji premjesti zadnji žeton na kvadratić 0.
+
+Branko se kladio s Perom u veliku Dorina čokoladu s lješnjacima da ga može pobijediti u Nimbu.
+Dogovorili su se da će Pero odrediti kvadratiće $a_i$ na koje Pero mora smjestiti žetone, ali zato Branko igra prvi.
+
+Pomozite dečkima i odredite tko će dobiti čokoladu!
+
+## Ulazni podatci
+
+U prvom retku nalazi se prirodni broj $N$ ($1 \leq N \leq 10^{6}$), broj žetona.
+U drugom retku nalaze se $N$ prirodnih brojeva $a_{i}$ ($0 \leq a_{i} < 2^{64}$), brojevi kvadratića na kojima su žetoni.
+
+## Izlazni podatci
+
+U jedini redak potrebno je ispisati "PERO" ako će čokoladu osvojiti Pero, "BRANKO" inače (bez navodnika).]]></problem>
+  <tags>teorija igara</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Objašnjeno na predavanju.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

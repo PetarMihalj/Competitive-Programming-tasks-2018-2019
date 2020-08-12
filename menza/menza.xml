@@ -1,0 +1,204 @@
+<challenge>
+  <name>Menza</name>
+  <problem><![CDATA[Oveći Perica često posjećuje studentsku menzu.
+
+U menzi postoji jedan jedini red jela,
+a jela su na pozicijama označenim indeksima od $1$ do $N$.
+
+Cijena jela s indeksom 1 zadana je kao $c_1$, a cijenu svakog sljedećeg 
+jela tete kuharice računaju formulom $c_{n+1} = ((a \cdot{c_n} + b) \% \text{MOD}) + 1$.
+
+Majka je Perici dala pozamašnu sumu novca, $M$ kuna.
+Od silnog bogatstva sinula mu je ekstravagantna ideja za sljedeći posjet menzi.
+
+Perica će ući u menzu i zaustaviti se kod određenog jela, s nekim indeksom $i$.
+Uzet će to jelo i ići udesno sve dok god bude imao novca da sve to plati
+(dakle uzimat će jela s indeksima $i$, $i + 1$, $i + 2$, itd.)
+
+Ako Perica dođe do kraja reda završava kupovinu, dakle moguće je da će 
+Perica kupiti samo jedno jelo.
+
+Pericu zanima može li potrošiti sav novac, 
+kod kojeg indeksa se mora zaustaviti
+i koliko jela će kupiti.
+
+Vremensko ograničenje je 8s, a memorijsko 256MB.
+
+### Ulazni podatci
+
+U prvom retku nalazi se prirodni broj $N$ ($1 \leq N \leq 10^7$), 
+broj jela u menzi.
+
+U drugom retku nalaze se parametri cijena jela odnosno 4 prirodna broja $c_1$, $a$, $b$ i $\text{MOD}$ 
+$(1 \leq c_1, a, b, \text{MOD} \leq 10^9)$.
+
+U trećem retku nalazi se prirodni broj $M$ ($1 \leq M \leq 10^{18}$), novac koji 
+je mama ostavila Perici.
+
+### Izlazni podatci
+
+U prvom retku potrebno je ispisati DA ili NE, ovisno o tome može li Perica 
+potrošiti sav novac.
+
+Ako Perica može potrošiti sav novac, u sljedeća 2 retka potrebno je ispisati 
+prirodne brojeve $X$ i $Y$, indeks jela kod kojeg se treba zaustaviti i broj jela 
+koji će kupiti, respektivno.
+
+Napomena: Ako postoji više rješenja, ispišite ono s najmanjim brojem $X$.
+
+]]></problem>
+  <tags>greedy</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef DEBUG
+#define DEBUG(...) printf(__VA_ARGS__)
+#endif
+
+int main() {
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[#include <bits/stdc++.h>
+
+using namespace std;
+
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  return 0;
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[import java.util.Scanner;
+
+public class program {
+	public static void main(String[] args) {
+	}
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Cijene jela u menzi generirane na opisani način su:
+$1, 5, 4, 6, 2$.
+
+Dođe li Perica do jela s indeksom $1$, 
+uzet će jela s cijenama $1+5+4=10$, što je jedno od rješenja našeg problema.
+
+Dođe li do jela s indeksom $2$, uzet će jela s cijenama $5+4=9$. Sve dalje mu je preskupo, a nije potrošio sve novce pa ovo nije rješenje.
+
+Perica zadatak može ispuniti i dođe li do jela s indeksom $3$,
+ali budući da je već to mogao i počevši od jela broj 1, to nije traženo rješenje.
+
+Dođe li Perica do jela s indeksom 5, uzet će samo njega (jer desno ne
+postoji jelo), te opet nije ispunio zadatak.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.sample.txt</input>
+      <output format="file">out3.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.sample.txt</input>
+      <output format="file">out4.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.sample.txt</input>
+      <output format="file">out5.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>6000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.sample.txt</input>
+      <output format="file">out6.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.sample.txt</input>
+      <output format="file">out7.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.sample.txt</input>
+      <output format="file">out8.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.sample.txt</input>
+      <output format="file">out9.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.sample.txt</input>
+      <output format="file">out10.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>8000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.sample.txt</input>
+      <output format="file">out12.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

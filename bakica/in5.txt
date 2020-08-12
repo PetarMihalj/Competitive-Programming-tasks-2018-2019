@@ -1,0 +1,10 @@
+5 25
+3 4
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aabb
+aabb
+aabb

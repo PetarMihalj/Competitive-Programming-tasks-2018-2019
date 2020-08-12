@@ -1,0 +1,12 @@
+5 25
+5 5
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+aaaaabbbbbcccccdddddeeeee
+eeeee
+eeeee
+eeeee
+eeeee
+eeeee

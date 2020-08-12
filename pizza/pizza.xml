@@ -1,0 +1,137 @@
+<challenge>
+  <name>Pizza</name>
+  <problem><![CDATA[Heri, naučivši kako pronaći najdulji put u labirintu, se zaposlio u lokalnoj magičnoj Prutkovoj pizzeriji. Pizzerija, za razliku od drugih pizzerija, ne funkcionira na principu da osoba naruči pizzu, nego predvidi tko će biti gladan (te koliko je spreman dati napojnicu) prije nego ta osoba postane gladna! Ta moć im omogućava da zarade više od ostalih pizzerija, no nažalost imaju problem kako odrediti kome dostaviti pizzu.
+
+Grad u kojem pizzeria djeluje se može predstaviti kao ukorijenjeno stablo gdje se u svakom čvoru nalazi po jedan stan. Za svaki čvor je poznat i njegov roditelj, dok je korijen stabla sam sebi roditelj.
+
+Kako bi pizzerija mogla maksimizirati svoju zaradu, želi unaprijed za razne rute odrediti koja je maksimalna napojnica koja se na svakoj od njih može dobiti. Ruta se definira kao najkraći put između dva čvora $A_i$ i $B_i$.
+
+!!!hint "Zadatak se svodi na traženje maksimalne vrijednosti između dva čvora. Ako koristite algoritam za pronalaženje maksimuma koji je sličan algoritmu za traženje LCA (lowest common ancestor), pripazite da prilikom toga uzmete u obzir sve čvorove na putu, pa tako i sami LCA."
+
+## Ulazni podaci
+U prvom retku ulaza nalaze se brojevi $N$ i $Q$ ($1 \leq N, Q \leq 10^5$), broj čvorova i broj ruta na koje pizzeria želi znati odgovor.
+
+U sljedećih $N$ redaka se nalaze po dva broja $P_i$ i $V_i$ ($1 \leq P_i \leq N, 1 \leq V_i \leq 10^5$), čvor roditelj od čvora $i$ te iznos napojnice za stan u tom čvoru.
+
+U sljedećih $Q$ redaka se nalaze po dva broja $A_i$ i $B_i$ ($1 \leq A_i, B_i \leq N$), oznake krajeva rute.
+
+## Izlazni podaci
+U $Q$ redaka je potrebno ispisati redom odgovore na upite.]]></problem>
+  <tags>stabla, maksimum na putu, LCA</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Najveća napojnica na putu od čvora 3 do 6 se nalazi u čvoru 2 u kojemu je iznos napojnice 3.
+
+Najveća napojnica na putu od čvora 1 do 7 se nalazi u čvoru 5 u kojemu je iznos napojnice 4.
+
+Najveća napojnica na putu od čvora 4 do 4 se nalazi u čvoru 4 u kojemu je iznos napojnice 3.]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

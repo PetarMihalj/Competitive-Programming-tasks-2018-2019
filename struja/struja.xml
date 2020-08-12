@@ -1,0 +1,136 @@
+<challenge>
+  <name>Struja</name>
+  <problem><![CDATA[Nikola je odlučio kako je pravo vrijeme za elektrificirati sve pruge u svojoj zemlji. 
+
+U zemlji postoji $N$ potpuno povezanih gradova s $N - 1$ pruga koje ih spajaju. U svakom gradu se mora izgraditi trafostanica određene jačine. Trafostanice su označene velikim slovima engleske abecede, s time da je A najjača trafostanica, a Z najslabija. Postoji dovoljno materijala za izgradnju svakog tipa trafostanice proizvoljan broj puta.
+
+Kako bi mreža bila stabilna, na putu između svake dvije trafostanice koje imaju istu jačinu mora postojati barem jedna jača trafostanica.
+
+Ako nije moguće izgraditi trafostanice tako da je zadovoljen navedeni uvjet, ispišite "NEMOGUCE" bez navodnika.
+
+!!!hint "Zadatak se može riješiti koristeći neku od metoda dekompozicije stabla."
+
+
+## Ulazni podaci
+U prvom retku ulaza nalazi se broj $N$ ($2 \leq N \leq 10^5$), broj gradova.
+
+U sljedećih $N-1$ redaka se nalaze parovi brojeva $A$ i $B$ ($1 \leq A, B \leq N$), oznake gradova između kojih postoji pruga.
+
+## Izlazni podaci
+U slučaju da je moguće izgraditi trafostanice, u jedinom retku izlaza je potrebno ispisati $N$ velikih slova engleske abecede odvojenih razmacima, gdje $i$-ti znak predstavlja tip trafostanice u gradu $i$.
+
+U suprotnome je potrebno ispisati "NEMOGUCE" bez navodnika.]]></problem>
+  <tags>stabla, centroid, konstrukcija</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Kako su svi ostali čvorovi spojeni na čvor 3, dovoljno je da se u njemu izgradi trafostanica s oznakom A kako bi na svim putovima između ostalih trafostanica s oznakom B postojala jača trafostanica.]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

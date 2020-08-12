@@ -1,0 +1,152 @@
+<challenge>
+  <name>Fantastična četvorka</name>
+  <problem><![CDATA[Prolazeći faksom, Ivica je slučajno načuo žestoku raspravu voditelja NATPROG-a.
+Voditelji su diskutirali o zadacima za prvu domaću zadaću, a Ivica je,
+potpuno nenamjerno, čuo pojam "Meet in the Middle". 
+
+----------------------------------------------------------------------
+
+Ivičin zadatak je sljedeći.
+Zadani su mu brojevi $n$ i $m$, a zatim u sljedećem redu niz od $n$ brojeva $a_0, ..., a_{n-1}$.
+Ivica mora odabrati točno $4$ indeksa iz niza, s mogućim ponavljanjem,
+tako da je suma elemenata na tim indeksima jednaka $m$.
+Ako postoji više različitih rješenja, ispisati bilo koje.
+
+
+### Ulazni podatci
+
+U prvom retku nalaze se brojevi n ($1 \leq n \leq 2000$) i m ($-4\cdot10^8 \leq m \leq 4\cdot10^8$).
+U drugom retku nalazi se brojevi niza $a_0, ..., a_{n-1}$, ($-10^8 \leq a_i \leq 10^8$).
+
+### Izlazni podatci
+
+U prvom retku potrebno je ispisati DA ili NE, ovisno o tome može li Ivica odabrati opisane indekse.
+Ako može, u drugom retku je te indekse potrebno ispisati.]]></problem>
+  <tags>binarno pretraživanje, sortiranje, meet in the middle</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[class program {
+	public static void main(String[] args) {
+
+        }
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Jedno rješenje su indeksi $0,0,0,1$ $(2+2+2+4=10)$.
+Drugo rješenje su indeksi $0,0,4,4$ $(2+2+3+3=10)$.
+Ispišite bilo koje rješenje u zadanom formatu.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Ne postoje indeksi koji rješavaju problem.]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

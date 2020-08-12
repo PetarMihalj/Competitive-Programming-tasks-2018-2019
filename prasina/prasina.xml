@@ -1,0 +1,269 @@
+<challenge>
+  <name>Prašina</name>
+  <problem><![CDATA[Pečemo kolače! Za jedan kolač potrebno je $n$ sastojaka, i to svih $n$. 
+Nadalje, za svaki sastojak znamo i iznos $a_i$: točno koliko grama tog sastojka 
+je potrebno za jedan kolač.
+
+Na početku nam dostupna količina sastojka $i$ iznosi $b_i$ grama. 
+
+Također imamo i $k$ vrećica čarobne prašine. Svaka vrećica prašine može zamjeniti točno 1 gram bilo kojeg od $n$ sastojaka.
+
+Zadatak Vam je odrediti koliko najviše kolača možemo ispeći.
+
+### Ulazni podatci
+
+U prvom retku nalaze se brojevi n ($1 \leq n \leq 200000$) i k ($0 \leq k \leq 10^9$).     
+U drugom retku nalazi se niz brojeva $a_0, ..., a_{n-1}$, ($1 \leq a_i \leq 10^9$).        
+U trećem retku nalazi se niz brojeva $b_0, ..., b_{n-1}$, ($0 \leq b_i \leq 10^9$).         
+
+### Izlazni podatci
+
+U prvom i jedinom retku izlaza potrebno je ispisati maksimalan broj kolača koje je moguće ispeći. ]]></problem>
+  <tags>binarno pretraživanje</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[class program {
+	public static void main(String[] args) {
+
+        }
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Ako jednu vrećicu čarobne prašine utrošimo na sastojak 0, i još jednu na sastojak 2, imat ćemo redom (12,12,15,20) sastojaka, a to je dovoljno za 3 kolača. 
+
+To je ujedno i najviše moguće.]]></hint>
+      <input format="file">in3.sample.txt</input>
+      <output format="file">out3.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in13.txt</input>
+      <output format="file">out13.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in14.txt</input>
+      <output format="file">out14.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in15.txt</input>
+      <output format="file">out15.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in16.txt</input>
+      <output format="file">out16.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in17.txt</input>
+      <output format="file">out17.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in18.txt</input>
+      <output format="file">out18.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in19.txt</input>
+      <output format="file">out19.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in20.txt</input>
+      <output format="file">out20.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in21.txt</input>
+      <output format="file">out21.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in22.txt</input>
+      <output format="file">out22.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in23.txt</input>
+      <output format="file">out23.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in24.txt</input>
+      <output format="file">out24.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in25.txt</input>
+      <output format="file">out25.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in26.txt</input>
+      <output format="file">out26.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in27.txt</input>
+      <output format="file">out27.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

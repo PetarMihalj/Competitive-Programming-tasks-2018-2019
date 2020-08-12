@@ -1,0 +1,183 @@
+<challenge>
+  <name>Gusari</name>
+  <problem><![CDATA[Posada gusara odlučila je napasti Rumunjsku, i pokrasti im sav rum! 
+
+Kao što svi znamo, Rumunjska je otočna država i sastavljena je od $N$ otoka. Svaki otok $i$ predstavljen je točkom, te nam je poznata njegova pozicija karti: ($xi$, $yi$).
+
+Gusari imaju genijalan plan: počet će od nekog otoka, te za njega zavezati uže. Ostatak užeta stavit će na brod i zaploviti. Kako oni plove, tako se iza njih uže odmotava. Kad se vrate do prvog otoka, zavezat će uže i na taj način zatočiti sve ljude (i sav rum) ograđen tim užetom. Unutar tog lika omeđenog užetom mogu slobodno pljačkati i paliti, jer su Rumunjski brodovi dovoljno manjkavi da ne mogu proći kroz uže.
+
+No, brod naših gusara ima jedan problem: fali mu jedno jedro, pa može skretati samo ulijevo.
+
+Gusari žele opljačkati baš svaki otok, te ih sada zanima koliko uža trebaju ponijeti. Vaš je zadatak odgovoriti im na to pitanje. 
+
+### Ulazni podaci
+
+U prvom retku nalazi se prirodan broj $N$ iz teksta. ($1 \leq N \leq 300000$).        
+U drugom retku nalaze se $N$ prirodnih brojeva $x_1, ..., x_{n}$, ($0 \leq x_i \leq 10^8$).  
+U trećem retku nalaze se $N$ prirodnih brojeva $y_1, ..., y_{n}$, ($0 \leq y_i \leq 10^8$).  
+
+### Izlazni podaci
+
+U prvom i jedinom retku izlaza ispišite potrebnu duljinu užeta, zaokruženu na najmanje cijelo.]]></problem>
+  <tags>convex hull, geometrija</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in13.txt</input>
+      <output format="file">out13.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in14.txt</input>
+      <output format="file">out14.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in15.txt</input>
+      <output format="file">out15.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in16.txt</input>
+      <output format="file">out16.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>536870912</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Uže će povezati sve točke osim treće u četverokut opsega duljine točno 8.]]></hint>
+      <input format="file">in17.sample.txt</input>
+      <output format="file">out17.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

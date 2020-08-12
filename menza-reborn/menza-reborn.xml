@@ -1,0 +1,238 @@
+<challenge>
+  <name>Menza - Reborn</name>
+  <problem><![CDATA[Kao što nam je svima poznato, petak na FER-u traje predugo, čak 10^9 minuta!
+Mnogi studenti, već umorni od silnih labosa, utjehu pronalaze u prženim lignjama.
+Problem je što menza lignje ne poslužuje cijelo vrijeme, nego samo u određenim vremenskim intervalima.
+Pomozite kolegama odrediti koliko minimalno moraju čekati na lignje!
+
+----------------------------------------------------------------------
+
+Svaki od $N$ studenata želi točno jednu porciju prženih lignji, iako će neki možda ostati i bez te jedne.
+
+Menza lignje poslužuje u svakom od $T$ $\textbf{nepreklapajučih}$ i $\textbf{uključnih}$ vremenskih intervala, $[Li,Ri]$, 
+
+Svaki student može u menzu doći u nekoj od njemu pridruženih minuta. Može se dogoditi da neki student uopće nema takvih minuta (detalji u opisu ulaza).
+
+Student odabire jednu njemu pridruženu minutu (ako ih ima) i tad dolazi u menzu.
+
+Ako ne mora čekati (stigne u vrijeme kad menza već poslužuje lignje), kažemo da čeka 0 minuta.
+
+Ako dođe u minuti $x$, a menza tad ne poslužuje lignje i sljedeći put ih krene posluživati tek u minuti $y$, onda student čeka $y-x$ minuta.
+
+Ako student uopće ne može doći do lignji (zbog toga što uopće ne može doći u menzu, ili doći i dočekati da menza poslužuje lignje), onda ispišite da student čeka $10^9+7$ minuta.
+
+Menza u istoj minuti može poslužiti neograničen broj porcija lignji.
+
+Napomena: ako menza poslužuje lignje u intervalu $[x,y]$, smatramo da student NE čeka čak i ako dođe u minuti $y$!
+
+## Input
+
+Prva linija sadrži broj studenata, $N$. ($1 \leq N \leq 3\cdot10^5$)
+
+Slijedi broj vremenskih intervala u kojima se poslužuju lignje, $T$. ($1 \leq T \leq 3\cdot10^5$)
+
+Svaki od sljedećih $T$ redaka sadrži po dva prirodna broja, $L_i$ i $R_i$, koji označavaju granice intervala u kojima se prodaju lignje. ($1 \leq L_i \leq R_i \leq 10^9$)
+
+Slijedi prirodni broj $Q$. ($1 \leq Q \leq 3\cdot10^5$)
+
+Svaki od sljedećih $Q$ redaka sadrži po dva prirodna broja, $s_i$ i $t_i$, koji označavaju da student $s_i$ u menzu može doći u minuti $t_i$. ($0 \leq s_i \leq N-1$), ($1 \leq t_i \leq 10^9$)
+
+
+## Output
+
+Ispišite točno $N$ cijelih brojeva, svaki u svoj red, koji označavaju koliko koji student minimalno čeka na lignje.
+]]></problem>
+  <tags>binarno pretraživanje, sweep line</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Student $0$ može u menzu doći u minuti $2$ ili minuti $3$.
+Ako dođe u minuti $2$, neće čekati ništa ($0$).
+Ako dođe u minuti $3$, čekati će do sljedećih lignji u minuti $4$, dakle $1$ minutu ($4-3=1$).
+
+Student $1$ može u menzu doći u minuti $3$.
+Dakle on će sigurno čekati $4-3=1$ minutu.
+
+Student $2$ može doći u menzu, ali dolazi u vrijeme od kad se više ne poslužuju lignje.
+Dakle on (po konvenciji) čeka $10^9+7$ minuta.]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.txt</input>
+      <output format="file">out12.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in13.txt</input>
+      <output format="file">out13.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in14.txt</input>
+      <output format="file">out14.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in15.txt</input>
+      <output format="file">out15.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in16.txt</input>
+      <output format="file">out16.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in17.txt</input>
+      <output format="file">out17.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in18.txt</input>
+      <output format="file">out18.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in19.txt</input>
+      <output format="file">out19.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in20.txt</input>
+      <output format="file">out20.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

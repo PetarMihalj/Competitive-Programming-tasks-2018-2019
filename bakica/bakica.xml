@@ -1,0 +1,113 @@
+<challenge>
+  <name>Bakica</name>
+  <problem><![CDATA[Bakica Mara veliki je obožavatelj kukičanja (https://www.heklanje.net/sheme-i-heklani-radovi/heklanje-ili-kukicanje/).
+Budući da u svom kukičarenju želi biti orginalna, ne želi ponoviti uzorke koji već negdje postoje.
+
+Ali bakica Mara već je malo starija, i ima problema s vidom.
+Na sreću, ima unuku koja je vrsna programerka, i pomoći će joj u tom problemu.
+
+Zadani su dvodimenzionalni uzorci $T$ i $P$. Ako uzorak $P$ postoji u uzorku $T$, ispišite "DA", inače ispišite "NE". 
+Uzorci se sastoje od malih slova engleske abecede.
+
+
+## Ulazni podaci
+U retku nalaze se dimenzije uzorka T (broj redaka i stupaca): $R_T$, $S_T$.
+U drugom nalaze se dimenzije uzorka P (broj redaka i stupaca): $R_P$, $S_P$.
+Svi ovi brojevi nalaze se u intervalu $[1,50]$.
+
+U sljedećih $R_T$ redaka nalazi se uzorak T.
+U sljedećih $R_P$ redaka nalazi se uzorak P.
+
+
+## Izlazni podaci
+Ispišite "DA" ako se uzorak P može naći u uzorku T. Inače ispišite "NE" (bez navodnika).]]></problem>
+  <tags>adhoc</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.sample.txt</input>
+      <output format="file">out2.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>512000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

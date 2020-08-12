@@ -1,0 +1,152 @@
+<challenge>
+  <name>Zig Zag</name>
+  <problem><![CDATA[Perica jako voli hokej pa je odlučio cijeli svoj razred povesti na hokejašku utakmicu. U razredu ima $k$ učenika koji će se smjestiti na tribinu koju možemo predstaviti kao matricu $2 \times n$ ($2$ retka i $n$ stupaca). 
+
+Kako bi što bolje uživali u hokeju učenici ne žele sjediti jedan do drugog. Točnije (ako na nekom polju sjedi učenik, na poljima gore, dolje, lijevo i desno ne smije sjediti drugi učenik).
+
+* `.` predstavlja prazno polje (ascii 46)
+
+* `#` predstavlja zid (ascii 35)
+
+Za zadanu matricu izračunajte broj različitih načina na koji učenici mogu sjesti tako da nijedna dva učenika ne sjede jedan do drugog (učenici smiju sjesti na prazna polja). 
+
+Dva rasporeda sjedenja smatraju se različitima ako na nekom polju u jednom rasporedu sjedi učenik, a u drugom ne.
+
+
+Rezultat može biti jako velik (ne stane u tip podataka `int`) pa vas zanima samo njegov ostatak pri dijeljenju sa $1\;000\;007$ (rezultat modulo $1\;000\;007$).
+
+
+$$\begin{eqnarray}
+  (a + b)\bmod c &=& (a \bmod c + b \bmod c) \bmod c\\\\
+  (a \cdot b) \bmod c &=& ((a \bmod c) \cdot (b \bmod c)) \bmod c
+\end{eqnarray}$$
+  
+> Pomoć: umjesto da računate retultat cijelo vrijeme računajte njegov ostatak pri dijeljenju sa $1\;000\;007$, npr. umjesto `a = b + c` pišite `a = (b + c) % 1000007`.
+
+> [geeksforgeeks: Modulo 10^9+7](https://www.geeksforgeeks.org/modulo-1097-1000000007/)
+
+### Ulazni podatci
+
+U prvom retku nalaze se 2 broja $n$ i $k$ ($1 \leq n \leq 1000$, $1 \leq k \leq 1000$).
+U sljedeća 2 retka nalazi se string $s_1$, odnosno $s_2$ duljine $n$, koji se sastoje od znakova `.` i `#` te predstavljaju prvi odnosno drugi redak tribine.
+
+### Izlazni podatci
+
+U prvom retku potrebno je ispisati broj načina(rasporeda) na koji učenici mogu sjesti na tribinu (u slučaju da ne postoji niti jedan način treba ispisati $0$) modulo $1\;000\;007$.
+]]></problem>
+  <tags>dinamičko programiranje, bitmaske/popločavanje</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[class program {
+	public static void main(String[] args) {
+
+        }
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Svi mogući rasporedi:
+
+    u.#   .u#   ..#   u.#   .u#
+    .u.   u..   u.u   ..u   ..u
+
+
+]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>1000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

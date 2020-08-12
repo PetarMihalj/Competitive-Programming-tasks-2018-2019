@@ -1,0 +1,161 @@
+<challenge>
+  <name>Intervali</name>
+  <problem><![CDATA[Mali Mirko pripremao se za međuispit iz natjecateljskog programiranja. Budući da su mu najveći problem predstavljali zadaci s upitima nad intervalima, odlučio je riješiti jedan takav zadatak. Na prašnjavoj polici pronašao je zadatak u kojem je bilo zadano $N$ upita, oblika intervala $[L_i, R_i], (L_i \le R_i)$. Istog časa upalio je računalo i pokrenuo svoj najdraži IDE!
+
+Nakon višesatnog preznojavanja nad tipkovnicom i blijedog gledanja u `#include <iostream>` u CodeBlocks-u, Mirko je shvatio da bi mu pomoć običnog staromodnog papira i pera za pisanje mogla koristiti. Uzeo je jedan list papira i na njega zapisao sve vrijednosti $L_i$ (u nasumičnom poretku). Zatim je uzeo drugi komad papira i na njega zapisao sve vrijednosti $R_i$ (također u nasumičnom poretku).
+
+Međutim, ubrzo je u njegovu sobu dotrčao Floki i prožvakao mu originalni zadatak sa zadanim upitima. Mirko je tada odustao od rješavanja, pošto je imao i dobar izgovor.
+
+Sve je ovo promatrao njegov brat Slavko, koji se sada pita: "Poznavajući sve vrijednosti $L_i$ i $R_i$, koliko različitih skupova upita je moglo pisati na originalnom zadatku?"
+
+## Input
+
+Prva linija sadrži broj upita, $N$. ($1 \leq N \leq 1\cdot10^5$)
+
+Druga linija sadrži $N$ prirodnih brojeva, $L_i$. ($1 \leq L_i \leq 10^9$)
+
+Treća linija sadrži $N$ prirodnih brojeva, $R_i$. ($1 \leq R_i \leq 10^9$)
+
+## Output
+
+Ispišite traženi broj iz teksta zadatka, broj različitih skupova upita modulo $10^9 + 7$.
+
+## Napomene:
+
+* Sve vrijednosti $L_i$ će biti međusobno različite.
+* Sve vrijednosti $R_i$ će također biti međusobno različite.
+* Uvijek će postojati barem jedan skup upita koji će zadovoljavati uvjete iz teksta zadatka.
+* Budući da rezultat može biti jako velik (ne stane u tip podataka `int`) pronađite samo njegov ostatak pri dijeljenju s $1\;000\;000\;007$ (rezultat modulo $1\;000\;000\;007$).
+* Preporuka je pri množenju pisati `(long long) a * b % MOD` ili ekvivalentan kod u programskom jeziku koji koristite.
+* Par dodatnih formula:
+
+
+$$\begin{eqnarray}
+  (a + b)\bmod c &=& (a \bmod c + b \bmod c) \bmod c\\\\
+  (a \cdot b) \bmod c &=& ((a \bmod c) \cdot (b \bmod c)) \bmod c
+\end{eqnarray}$$
+
+
+]]></problem>
+  <tags>ad-hoc, kombinatorika</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Moguci skupovi upita:
+
+$\{ [1,2], [2,3], [3,5] \}$
+
+$\{ [1,5], [3,3], [2,2] \}$
+
+$\{ [1,3], [2,2], [3,5] \}$
+
+$\{ [1,2], [2,5], [3,3] \}$]]></hint>
+      <input format="file">in1.sample.txt</input>
+      <output format="file">out1.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.txt</input>
+      <output format="file">out11.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

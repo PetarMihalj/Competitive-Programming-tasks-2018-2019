@@ -1,0 +1,135 @@
+<challenge>
+  <name>Pljusak</name>
+  <problem><![CDATA[Vesela je atmosfera na velikoj livadi koju možemo zamisliti kao matricu dimenzija $N \times M$. Na livadi se nalazi $I$ mladih izviđača, kao i $S$ šatora.
+
+Nažalost, za $T$ se sekundi sprema snažan pljusak te izviđači moraju potražiti zaklon u šatorima. Svakom je izviđaču potrebna točno jedna sekunda da se pomakne s polja na kojem se nalazi do bilo kojeg polja koje je tom polju susjedno u nekom od osam smjerova, neovisno o tome nalazi li se u tom trenutku na odredišnom polju neki drugi izviđač, šator, ili ništa od navedenog. Izviđač može ući u šator koji se nalazi na istom polju kao i on te mu za to treba približno $0$ sekundi. No, budući da su šatori maleni, najviše jedan izviđač može ući u neki šator i u njemu se zaštititi od kiše.
+
+
+Kada prođe $T$ sekundi, svi će izviđači koji nisu ušli u neki od šatora, nažalost pokisnuti. Srećom, izviđači su veliki poznavatelji teorije grafova pa su se spontano organizirali tako da najveći mogući broj njih pronađe zaklon od kiše. Koliko izviđača je moralo pokisnuti?
+
+
+## Ulazni podaci
+
+U prvom retku nalaze se brojevi $N$ i $M$ $(1 \leq N, M \leq 100)$.
+U drugom retku nalaze se brojevi $I$, $S$ i $T$ $(1 \leq I, S, T \leq 100)$.
+U sljedećih N redaka nalazi se po $M$ znakova koji opisuju livadu. Znak `S` označava šator, znak `I` označava izviđača, a znak `.` označava prazan prostor.
+
+
+## Izlazni podaci
+
+U prvi i jedini redak ispišite broj izviđača koji su morali pokisnuti.
+]]></problem>
+  <tags>matching</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

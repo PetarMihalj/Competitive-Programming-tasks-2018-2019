@@ -1,0 +1,143 @@
+<challenge>
+  <name>Bomboni</name>
+  <problem><![CDATA[Ivica na raspolaganju ima $n$ vreća bombona poslaganih u niz. Svaka vreća ima $A_i$ bombona. Ivica također zna da će neko dijete biti sretno samo ako dobije više od $P$ bombona. 
+
+Ivica mrzi monotoniju pa želi neke vreće bombona grupirati tako da se u svakoj grupi nalazi više od $P$ bombona te da se svaka grupa sastoji od uzastopnih vreća bombona iz niza. 
+
+Ivicu ne zanima koliko grupa će napraviti nego samo na koliko načina može podijeliti niz u grupe tako da je svaka vreća u točno jednoj grupi i za svaku grupu vrijede gore navedena svojstva.
+
+### Ulazni podatci
+
+U prvom retku nalaze se 2 broja $n$ i $P$ ($1 \leq n \leq 1000$, $1 \leq P \leq 10^9$).
+U sljedećem retku nalazi se niz od $n$ brojeva, gdje $A_i$ predstavlja koliko bombona sadrži i-ta vreća ($0 \leq A_i \leq 10^6$).
+
+### Izlazni podatci
+
+U prvom i jedinom retku treba ispisati broj različitih podjela vreća u grupe. (modulo $10^9 + 7$).
+
+### Napomene:
+
+* Budući da rezultat može biti jako velik (ne stane u tip podataka `int`) pronađite samo njegov ostatak pri dijeljenju s $1\;000\;000\;007$ (rezultat modulo $1\;000\;000\;007$).
+* Preporuka je pri množenju pisati `(long long) a * b % MOD` ili ekvivalentan kod u programskom jeziku koji koristite.
+* Par dodatnih formula:
+
+
+$$\begin{eqnarray}
+  (a + b)\bmod c &=& (a \bmod c + b \bmod c) \bmod c\\\\
+  (a \cdot b) \bmod c &=& ((a \bmod c) \cdot (b \bmod c)) \bmod c
+\end{eqnarray}$$
+]]></problem>
+  <tags>dinamičko programiranje</tags>
+  <programming_languages>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>3000</cpu_time_limit>
+      <memory_limit>256000000</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Svaka grupa mora imati barem 4 bombona, dakle sve vreće sa jednim bombonom moraju ići skupa, a vreća s 4 bombona može i ne mora s njima (može činiti zasebnu grupu).]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>

@@ -1,0 +1,164 @@
+<challenge>
+  <name>Kalamper</name>
+  <problem><![CDATA[U jednom malom bijelom hrvatskom selu svake se jeseni održava natjecanje u berbi krumpira. Nagrada za sudionike koji proizvedu najviše krumpira je ugravirano ime na spomeniku krumpira u centru naselja.
+
+Ovogodišnja berba je već gotova, a Karlova obitelj bila je nadomak mjesta da se upiše na povijesnu ljestvicu najboljih proizvođača. Karlo je, pomalo tužan što mu je nagrada vječne slave pobjegla za razliku od samo tri krumpira, odlučio da će se za sljedeću berbu bolje pripremiti te je uzeo kartu svog imanja da odredi najveći komad zemlje na kojem će posaditi krumpir.
+
+Karta imanja može se prikazati kao matrica s $N$ redaka i $M$ stupaca. Svaki element matrice predstavlja jedinični komad zemlje koji može biti ili plodan ili neplodan. Radi jednostavnosti, Karlo želi da mu dio imanja na kojem će saditi krumpire bude pravokutnog oblika. Naravno, sva polja tog dijela zemlje moraju biti plodna.
+
+Odredite površinu najvećeg dijela imanja na kojem će Karlo saditi krumpire.
+
+### Ulazni podatci
+
+U prvom retku nalaze se dva prirodna broja $N$ i $M$ $(1 \le N, M \le 15)$, koji predstavljaju dimenzije Karlovog imanja.
+
+U sljedećih $N$ redaka nalazi se po $M$ znakova koji predstavljaju izgled imanja. Znak može biti `.` (točka - plodan komad zemlje) ili `x` (neplodan komad zemlje).
+
+### Izlazni podatci
+
+Ispišite površinu najvećeg pravokutnog dijela imanja na kojem će Karlo saditi krumpir.]]></problem>
+  <tags>brute, matrica</tags>
+  <programming_languages>
+    <programming_language>
+      <code>C</code>
+      <submission_template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef DEBUG
+#define DEBUG(...) printf(__VA_ARGS__)
+#endif
+
+int main() {
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python3</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Python2</code>
+      <submission_template><![CDATA[]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Cpp</code>
+      <submission_template><![CDATA[#include <bits/stdc++.h>
+
+using namespace std;
+
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  return 0;
+}]]></submission_template>
+    </programming_language>
+    <programming_language>
+      <code>Java</code>
+      <submission_template><![CDATA[import java.util.Scanner;
+
+public class program {
+	public static void main(String[] args) {
+	}
+}]]></submission_template>
+    </programming_language>
+  </programming_languages>
+  <testcases>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in1.txt</input>
+      <output format="file">out1.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in2.txt</input>
+      <output format="file">out2.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in3.txt</input>
+      <output format="file">out3.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in4.txt</input>
+      <output format="file">out4.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in5.txt</input>
+      <output format="file">out5.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in6.txt</input>
+      <output format="file">out6.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in7.txt</input>
+      <output format="file">out7.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in8.txt</input>
+      <output format="file">out8.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in9.txt</input>
+      <output format="file">out9.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>0</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in10.txt</input>
+      <output format="file">out10.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[Najveći pravokutni plodni dio imanja počinje na koordinatama (2, 1) i proteže se skroz do koordinate (3, 3).
+
+Površina tog pravokutnika je $(3 - 2 + 1) \cdot (3 - 1 + 1) = 6$.]]></hint>
+      <input format="file">in11.sample.txt</input>
+      <output format="file">out11.sample.txt</output>
+    </testcase>
+    <testcase>
+      <cpu_time_limit>2000</cpu_time_limit>
+      <memory_limit>268435456</memory_limit>
+      <is_public>1</is_public>
+      <hint><![CDATA[]]></hint>
+      <input format="file">in12.sample.txt</input>
+      <output format="file">out12.sample.txt</output>
+    </testcase>
+  </testcases>
+</challenge>
